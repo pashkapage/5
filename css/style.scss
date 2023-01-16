@@ -1,62 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;600;700&display=swap');
-$font:'Figtree', sans-serif;
-*{
+$font: 'Figtree', sans-serif;
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 html {
     font-family: $font;
     color: white;
-    overflow:  hidden;
+    /* overflow:  hidden; */
 }
-.header{
+
+.header {
     position: relative;
-    .wrap-row{
+
+    .wrap-row {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        .logo{
-            margin-left:83px;
+        position: absolute;
+        width: 100%;
+
+        .logo {
+            margin-left: 83px;
             margin-top: 33px;
             width: 13.2vw;
         }
-        .nav{
-            display:flex;
+
+        .nav {
+            display: flex;
             flex-direction: row;
             list-style-type: none;
             gap: 56px;
             margin-right: 78px;
             margin-top: 30px;
-            &_link{
+
+            &_link {
                 font-size: 14px;
                 font-weight: 700;
                 text-transform: uppercase;
                 color: white;
                 letter-spacing: 4.5px;
                 text-decoration: none;
-                &--active{
+
+                &--active {
                     color: red;
                 }
             }
         }
     }
-    .wrap-column{
+
+    .wrap-column {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        position: relative;
-        margin-top: 200px;
-        .header_caption{
+        position: absolute;
+        /* margin-top: 200px; */
+        width: 100%;
+        top: 300px;
+
+        .header_caption {
             text-transform: uppercase;
             font-size: 3rem;
             font-weight: 300;
             letter-spacing: 23px;
             /* margin-left: 20px; */
         }
-        .header_span{
+
+        .header_span {
             font-size: 1.5rem;
             text-transform: uppercase;
             font-weight: 700;
@@ -64,23 +79,94 @@ html {
             letter-spacing: 10px;
             margin-top: 25px;
         }
-        .arrow{
+
+        .arrow {
             display: block;
-            &_img{
+
+            &_img {
                 display: block;
                 width: 84px;
                 height: 42px;
                 position: absolute;
-                transform: translate(-50% , 500%);
+                transform: translate(-50%, 400%);
             }
         }
     }
-    &_img{
-        position: absolute;
+
+    &_img {
         max-width: 100%;
+        /* position: absolute;
         top: 0;
         left: 0;
-        z-index: -1;
+        z-index: -1; */
     }
 }
-  
+
+.main {
+    display: flex;
+    flex-direction: column;
+
+    .body {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "gourmet gourmet carhartt"
+            "gourmet gourmet adidas"
+            "tendeep palace nike";
+        gap:45px;
+        justify-content: center;
+        background-color: white;
+        margin: 5vw;
+        .box{
+            position: relative;
+            /* overflow: hidden; */
+        }
+        .box_photo{
+            /* object-fit: cover; */
+            max-width: 100%;
+        }
+        .box_logo{
+            position: absolute;
+            left: 30px;
+            top:50%;
+        }
+        .box_caption{
+            font-size: 40px;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            position: absolute;
+           
+            left: 30px;
+            bottom: 30px;
+        }
+        .box-1 {
+            grid-area: gourmet;
+        }
+
+        .box-2 {
+            grid-area: carhartt;
+        }
+
+        .box-3 {
+            grid-area: adidas;
+        }
+
+        .box-4 {
+            grid-area: tendeep;
+        }
+
+        .box-5 {
+            grid-area: palace;
+        }
+
+        .box-6 {
+            grid-area: nike;
+        }
+    }
+
+    .instagram {
+        display: flex;
+    }
+}

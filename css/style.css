@@ -8,7 +8,7 @@
 html {
   font-family: "Figtree", sans-serif;
   color: white;
-  overflow: hidden;
+  /* overflow:  hidden; */
 }
 
 .header {
@@ -19,6 +19,8 @@ html {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  width: 100%;
 }
 .header .wrap-row .logo {
   margin-left: 83px;
@@ -49,8 +51,10 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
-  margin-top: 200px;
+  position: absolute;
+  /* margin-top: 200px; */
+  width: 100%;
+  top: 300px;
 }
 .header .wrap-column .header_caption {
   text-transform: uppercase;
@@ -75,12 +79,70 @@ html {
   width: 84px;
   height: 42px;
   position: absolute;
-  transform: translate(-50%, 500%);
+  transform: translate(-50%, 400%);
 }
 .header_img {
-  position: absolute;
   max-width: 100%;
+  /* position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -1; */
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.main .body {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "gourmet gourmet carhartt" "gourmet gourmet adidas" "tendeep palace nike";
+  gap: 45px;
+  justify-content: center;
+  background-color: white;
+  margin: 5vw;
+}
+.main .body .box {
+  position: relative;
+  /* overflow: hidden; */
+}
+.main .body .box_photo {
+  /* object-fit: cover; */
+  max-width: 100%;
+}
+.main .body .box_logo {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+}
+.main .body .box_caption {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
+.main .body .box-1 {
+  grid-area: gourmet;
+}
+.main .body .box-2 {
+  grid-area: carhartt;
+}
+.main .body .box-3 {
+  grid-area: adidas;
+}
+.main .body .box-4 {
+  grid-area: tendeep;
+}
+.main .body .box-5 {
+  grid-area: palace;
+}
+.main .body .box-6 {
+  grid-area: nike;
+}
+.main .instagram {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
