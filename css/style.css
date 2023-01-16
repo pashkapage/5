@@ -8,6 +8,7 @@
 html {
   font-family: "Figtree", sans-serif;
   color: white;
+  scroll-behavior: smooth;
   /* overflow:  hidden; */
 }
 
@@ -151,4 +152,28 @@ html {
 }
 .main .instagram {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+}
+.main .instagram .instagram_item {
+  width: 25%;
+  height: 24.6vw;
+}
+.main .instagram .instagram_item .instagram_img {
+  max-width: 100%;
+}
+.main .instagram .caption, .main .instagram .view {
+  display: block;
+  position: absolute;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  top: 40%;
+  left: 20%;
+  font-size: 55px;
+}
+.main .instagram .view {
+  top: 50%;
+  left: 40%;
 }/*# sourceMappingURL=style.css.map */

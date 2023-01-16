@@ -10,6 +10,7 @@ $font: 'Figtree', sans-serif;
 html {
     font-family: $font;
     color: white;
+    scroll-behavior: smooth; //плавная прокрутка по сылке якорю
     /* overflow:  hidden; */
 }
 
@@ -82,7 +83,7 @@ html {
 
         .arrow {
             display: block;
-
+            
             &_img {
                 display: block;
                 width: 84px;
@@ -176,5 +177,33 @@ html {
 
     .instagram {
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        
+
+        .instagram_item{
+            width:25%;
+            height: 24.6vw;
+            
+            .instagram_img{
+                max-width: 100%;
+                
+            }
+        }
+        .caption, .view{
+            display: block;
+            position: absolute;
+            text-transform: uppercase;
+            letter-spacing: 20px;
+            top:40%;
+            left: 20%;
+            font-size: 55px;
+        }
+        .view{
+          top:50%;
+          left: 40%;
+        }
     }
 }
