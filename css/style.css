@@ -131,8 +131,14 @@ html {
 .main .body .box-2 {
   grid-area: carhartt;
 }
+.main .body .box-2 .box_logo {
+  top: 20%;
+}
 .main .body .box-3 {
   grid-area: adidas;
+}
+.main .body .box-3 .box_logo {
+  top: 20%;
 }
 .main .body .box-4 {
   grid-area: tendeep;
