@@ -5,6 +5,12 @@
   padding: 0;
 }
 
+body {
+  max-width: 1366px;
+  margin: 0 auto;
+  background-color: grey;
+}
+
 html {
   font-family: "Figtree", sans-serif;
   color: white;
@@ -86,6 +92,7 @@ html {
 .main {
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 .main .body {
   width: 90%;
@@ -96,7 +103,9 @@ html {
   gap: 45px;
   justify-content: center;
   background-color: white;
-  margin: 5vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  margin: 0 auto;
 }
 .main .body .box {
   position: relative;
@@ -190,6 +199,7 @@ html {
   justify-content: space-between;
   align-items: center;
   height: 100px;
+  background-color: white;
 }
 .footer .menu-footer {
   display: flex;
