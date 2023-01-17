@@ -9,7 +9,6 @@ html {
   font-family: "Figtree", sans-serif;
   color: white;
   scroll-behavior: smooth;
-  /* overflow:  hidden; */
 }
 
 .header {
@@ -53,7 +52,6 @@ html {
   justify-content: center;
   align-items: center;
   position: absolute;
-  /* margin-top: 200px; */
   width: 100%;
   top: 300px;
 }
@@ -62,7 +60,6 @@ html {
   font-size: 3rem;
   font-weight: 300;
   letter-spacing: 23px;
-  /* margin-left: 20px; */
 }
 .header .wrap-column .header_span {
   font-size: 1.5rem;
@@ -84,10 +81,6 @@ html {
 }
 .header_img {
   max-width: 100%;
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1; */
 }
 
 .main {
@@ -107,10 +100,8 @@ html {
 }
 .main .body .box {
   position: relative;
-  /* overflow: hidden; */
 }
 .main .body .box_photo {
-  /* object-fit: cover; */
   max-width: 100%;
 }
 .main .body .box_logo {
@@ -169,8 +160,6 @@ html {
   position: absolute;
   text-transform: uppercase;
   letter-spacing: 20px;
-  /* top:40%;
-  left: 20%; */
   transform: translate(-10%, -30%);
   top: 40%;
   left: 20%;
