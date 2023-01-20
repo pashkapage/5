@@ -340,6 +340,7 @@ html {
 @media(max-width:650px){
     .header .wrap-row .nav{
         flex-direction: column;
+        margin-right: 20px;
     }
     .header .wrap-row{
         align-items: start;
@@ -357,5 +358,22 @@ html {
     }
     .header .wrap-row .logo{
         margin-left:20px;
+    }
+    .main .instagram .instagram_item{
+        width:50%;
+        height: 24.5vw * 2;
+    }
+    .main .instagram .layer-opacity{
+        height: 24.5vw * 8;
+    }
+    .footer{
+        justify-content: center;
+        background-color: black;
+        .menu-footer .link-footer{
+            color: white;
+        }
+        .social{
+            display: none;
+        }
     }
 }

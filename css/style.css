@@ -305,6 +305,7 @@ html {
 @media (max-width: 650px) {
   .header .wrap-row .nav {
     flex-direction: column;
+    margin-right: 20px;
   }
   .header .wrap-row {
     align-items: start;
@@ -322,5 +323,22 @@ html {
   }
   .header .wrap-row .logo {
     margin-left: 20px;
+  }
+  .main .instagram .instagram_item {
+    width: 50%;
+    height: 49vw;
+  }
+  .main .instagram .layer-opacity {
+    height: 196vw;
+  }
+  .footer {
+    justify-content: center;
+    background-color: black;
+  }
+  .footer .menu-footer .link-footer {
+    color: white;
+  }
+  .footer .social {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
