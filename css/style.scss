@@ -302,6 +302,9 @@ html {
     .footer .menu-footer{
         gap:calc(5px + 20 * (100vw/1366)) ;
     }
+    .main .body{
+        gap: calc(10px + 35 * (100vw / 1366));
+    }
 }
 @media(max-width:850px){
     .footer{
@@ -315,6 +318,24 @@ html {
     .footer .social{
         flex-direction: column;
     }
+    .main .body{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "gourmet gourmet"
+        "gourmet gourmet"
+        "tendeep palace"
+        "nike adidas"
+        "nike carhartt";
+    }
+    .main .body .box-6{
+        .box_logo{
+            top:30%;
+        }
+        .box_caption{
+            top: 50%;
+        }
+    } 
+ 
 }
 @media(max-width:650px){
     .header .wrap-row .nav{
@@ -329,6 +350,7 @@ html {
     .header .wrap-column{
         align-items: flex-start;
         left: 20px;
+        width: unset;
     }
     .header .wrap-column .header_caption{
         letter-spacing: 1vw;
