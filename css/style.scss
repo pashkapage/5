@@ -39,7 +39,7 @@ html {
             display: flex;
             flex-direction: row;
             list-style-type: none;
-            gap: 56px;
+            gap: 4.09vw;//56px;
             margin-right: 78px;
             margin-top: 30px;
 
@@ -65,21 +65,30 @@ html {
         align-items: center;
         position: absolute;
         width: 100%;
-        top: 300px;
+        top:22vw;
+        //top: 300px;
 
         .header_caption {
             text-transform: uppercase;
-            font-size: 3rem;
+            font-size: calc(18px + 30 * (100vw / 1366));//3rem - 48px максимальное значение,  ;
+            font-weight: 300;
+            letter-spacing: 1.68vw;//23px;
+        }
+
+        .box{
+            text-transform: uppercase;
+            font-size: 48px;//16px * 3; //48px
             font-weight: 300;
             letter-spacing: 23px;
+            color: blue;
         }
 
         .header_span {
-            font-size: 1.5rem;
+            font-size: calc(16px + 8 * (100vw / 1366));
             text-transform: uppercase;
             font-weight: 700;
             color: #f84545;
-            letter-spacing: 10px;
+            letter-spacing: 0.73vw;
             margin-top: 25px;
         }
 
@@ -88,10 +97,11 @@ html {
             
             &_img {
                 display: block;
-                width: 84px;
-                height: 42px;
                 position: absolute;
-                transform: translate(-50%, 400%);
+                transform: translate(-50%, 10vw);
+                width: 6vw;
+                height: 3.07vw;
+                
             }
         }
     }
@@ -121,7 +131,8 @@ html {
         padding-bottom: 5vw;
         margin: 0 auto;
         .box{
-            position: relative;         
+            position: relative;
+            overflow: hidden;         
         }
         .box_photo{
             max-width: 100%;
@@ -133,22 +144,25 @@ html {
         }
         
         .box_caption{
-            font-size: 40px;
+            font-size: calc(16px + (24 * 0.7 ) * (100vw / 1366));//40px;
             text-transform: uppercase;
-            letter-spacing: 10px;
+            letter-spacing:calc(2px + 8 * (100vw/1366));
             position: absolute;
             left: 30px;
-            bottom: 30px;
+            bottom: calc(5px + 25 * (100vw/ 1366));
         }
         .box-1 {
             grid-area: gourmet;
-            
+            .box_logo{
+                width: 25%;
+            }
         }
 
         .box-2 {
             grid-area: carhartt;
             .box_logo{
                 top:20%;
+                width: 21%;
             }
         }
 
@@ -156,19 +170,30 @@ html {
             grid-area: adidas;
             .box_logo{
                 top:20%;
+                width: 37%;
             }
         }
 
         .box-4 {
             grid-area: tendeep;
+            .box_logo{
+                width: 70%;
+            }
+
         }
 
         .box-5 {
             grid-area: palace;
+            .box_logo{
+                width: 30%;
+            }
         }
 
         .box-6 {
             grid-area: nike;
+            .box_logo{
+                width: 50%;
+            }
         }
     }
 
@@ -182,7 +207,7 @@ html {
         .instagram_item{
             width:25%;
             height: 24.5vw;
-            
+            overflow: hidden;
             .instagram_img{
                 max-width: 100%;
                 
@@ -192,11 +217,11 @@ html {
             display: block;
             position: absolute;
             text-transform: uppercase;
-            letter-spacing: 20px;
+            letter-spacing: calc(2px + 18 * (100vw/1366));
             transform: translate(-10%, -30%);
             top: 40%;
             left: 20%;
-            font-size: 55px;
+            font-size: 4.02vw;//55px;
             z-index: 3;
         }
         .view{
@@ -205,7 +230,7 @@ html {
             left: 50%;
             font-size: 20px;
             font-weight: 600;
-            letter-spacing: 10px;
+            letter-spacing: calc(2px + 18 * (100vw/1366));
             color: #f84545;
             
         }
@@ -230,7 +255,7 @@ html {
         display: flex;
         flex-direction: row;
         margin-left: 50px;
-        gap:50px;
+        gap:calc(10px + 40 * (100vw/1366)) ;
         .menu-footer_item{
             list-style-type: none;
         }
@@ -253,11 +278,62 @@ html {
         }
     }
 }
-@media(min-width:1337px){
+@media(min-width:1367px){
     .main .instagram .instagram_item{
         height:calc( 680px / 2 ) ;
     }
     .main .instagram .layer-opacity{
         height: 680px;
+    }
+    .header .wrap-column{
+        transform: unset;
+        top: 300px;
+    }
+}
+
+@media(max-width:1000px){
+    .header .wrap-row .nav{
+        gap:3vw;
+        margin-right: 50px;
+    }
+    .header .wrap-row .logo{
+        margin-left: 50px;
+    }
+    .footer .menu-footer{
+        gap:calc(5px + 20 * (100vw/1366)) ;
+    }
+}
+@media(max-width:850px){
+    .footer{
+        height: auto;
+    }
+    .footer .menu-footer{
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .footer .social{
+        flex-direction: column;
+    }
+}
+@media(max-width:650px){
+    .header .wrap-row .nav{
+        flex-direction: column;
+    }
+    .header .wrap-row{
+        align-items: start;
+    }
+    .header .wrap-column .arrow_img{
+        transform: translate(45vw, 5vw);
+    }
+    .header .wrap-column{
+        align-items: flex-start;
+        left: 20px;
+    }
+    .header .wrap-column .header_caption{
+        letter-spacing: 1vw;
+    }
+    .header .wrap-row .logo{
+        margin-left:20px;
     }
 }
