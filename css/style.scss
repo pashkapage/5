@@ -9,12 +9,13 @@ $font: 'Figtree', sans-serif;
 body{
     max-width: 1366px;
     margin:0 auto;
-    background-color: grey;
+    background-color: white;
 }
 html {
     font-family: $font;
     color: white;
     scroll-behavior: smooth; //плавная прокрутка по сылке якорю
+    background-color: grey;
 }
 
 .header {
@@ -180,7 +181,7 @@ html {
 
         .instagram_item{
             width:25%;
-            height: 24.6vw;
+            height: 24.5vw;
             
             .instagram_img{
                 max-width: 100%;
@@ -250,5 +251,13 @@ html {
         .social_img{
             height: 29px;
         }
+    }
+}
+@media(min-width:1337px){
+    .main .instagram .instagram_item{
+        height:calc( 680px / 2 ) ;
+    }
+    .main .instagram .layer-opacity{
+        height: 680px;
     }
 }

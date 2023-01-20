@@ -8,13 +8,14 @@
 body {
   max-width: 1366px;
   margin: 0 auto;
-  background-color: grey;
+  background-color: white;
 }
 
 html {
   font-family: "Figtree", sans-serif;
   color: white;
   scroll-behavior: smooth;
+  background-color: grey;
 }
 
 .header {
@@ -159,7 +160,7 @@ html {
 }
 .main .instagram .instagram_item {
   width: 25%;
-  height: 24.6vw;
+  height: 24.5vw;
 }
 .main .instagram .instagram_item .instagram_img {
   max-width: 100%;
@@ -226,4 +227,13 @@ html {
 }
 .footer .social .social_img {
   height: 29px;
+}
+
+@media (min-width: 1337px) {
+  .main .instagram .instagram_item {
+    height: 340px;
+  }
+  .main .instagram .layer-opacity {
+    height: 680px;
+  }
 }/*# sourceMappingURL=style.css.map */
